@@ -32,8 +32,10 @@ namespace core {
             ~numword();
             numnum getnum() const;
             void setnum(const numnum& num);
-            std::string words(numnum n);
-
+            numnum operator = (const numnum& num);
+            std::string words();
+            std::string words(const numnum& n);
+            std::string operator () (const numnum& num);
     };
 };
 

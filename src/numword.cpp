@@ -16,6 +16,11 @@ core::numnum core::numword::operator = (const numnum& num)
     return getnum();
 }
 
+std::string core::numword::words()
+{
+    return "";
+}
+
 std::string core::numword::words(const core::numnum& n)
 {
     return "";
