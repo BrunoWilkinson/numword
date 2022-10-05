@@ -30,7 +30,10 @@ namespace core {
             numword();
             numword(const numnum& num);
             ~numword();
+            numnum getnum() const;
+            void setnum(const numnum& num);
             std::string words(numnum n);
+
     };
 };
 
