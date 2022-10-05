@@ -1,3 +1,6 @@
+#ifndef NUMWORD_H
+#define NUMWORD_H
+
 #include <cstdio>
 #include <string>
 
@@ -7,3 +10,5 @@ namespace core {
             std::string words(uint64_t n);
     };
 };
+
+#endif // NUMWORD_H
