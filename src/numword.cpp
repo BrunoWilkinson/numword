@@ -10,7 +10,18 @@ core::numnum core::numword::getnum() const { return _num; }
 
 void core::numword::setnum(const core::numnum& num) { _num = num; }
 
-std::string core::numword::words(core::numnum n)
+core::numnum core::numword::operator = (const numnum& num)
+{
+    setnum(num);
+    return getnum();
+}
+
+std::string core::numword::words(const core::numnum& n)
 {
     return "";
+}
+
+std::string core::numword::operator () (const core::numnum& num) 
+{ 
+    return words(num);
 }
