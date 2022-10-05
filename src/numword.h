@@ -25,7 +25,9 @@ namespace core {
     static const std::string space = " ";
 
     class numword {
+        numnum _num = 0;
         public:
+            numword();
             std::string words(numnum n);
     };
 };
