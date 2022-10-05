@@ -3,6 +3,7 @@
 
 #include <cstdio>
 #include <string>
+#include <cmath>
 
 namespace core {
     typedef uint64_t numnum;
@@ -26,6 +27,8 @@ namespace core {
 
     class numword {
         numnum _num = 0;
+        bool hyphen_flag = false;
+        std::string appendspace();
         public:
             numword();
             numword(const numnum& num);
@@ -34,7 +37,7 @@ namespace core {
             void setnum(const numnum& num);
             numnum operator = (const numnum& num);
             std::string words();
-            std::string words(const numnum& n);
+            std::string words(const numnum& num);
             std::string operator () (const numnum& num);
     };
 };
