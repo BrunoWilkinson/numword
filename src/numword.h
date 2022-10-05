@@ -28,6 +28,7 @@ namespace core {
         numnum _num = 0;
         public:
             numword();
+            numword(const numnum& num);
             std::string words(numnum n);
     };
 };
