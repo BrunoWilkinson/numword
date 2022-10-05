@@ -29,6 +29,7 @@ namespace core {
         public:
             numword();
             numword(const numnum& num);
+            ~numword();
             std::string words(numnum n);
     };
 };
