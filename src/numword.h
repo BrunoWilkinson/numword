@@ -18,7 +18,7 @@ namespace core {
         errnum, errnum, "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninty",
     };
     static const std::string hundred = "hundred";
-    static const std::string powers = {
+    static const std::string powers[] = {
         errnum, "thousand", "million", "billion", "trillion", "quadrillion"
     };
     static const std::string hyphen = "-";
